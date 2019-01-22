@@ -1,0 +1,19 @@
+{
+	"verbose": true,
+	"debug": false,
+	"exec": "cross-env node --inspect -r dotenv/config ./src/server.js",
+	"ignore": [
+		"mochawesome-report",
+		"node_modules",
+		"./test",
+		"fixtures/*",
+		"test/**/*",
+		"docs/*"
+	],
+	"events": {
+		"restart": "echo \"[Warning] Restarting...\""
+	},
+	"watch": ["./src"],
+	"ext": "js, gql, json",
+	"inspect": true
+}
