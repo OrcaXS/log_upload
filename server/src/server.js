@@ -98,6 +98,7 @@ const init = async () => {
       directory: {
         path: path.join(__dirname, '../..', 'client/dist'),
         index: ['index.html', 'default.html'],
+        redirectToSlash: true,
       },
     },
   });
