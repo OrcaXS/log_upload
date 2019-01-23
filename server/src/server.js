@@ -122,6 +122,9 @@ server.route({
     payload: {
       output: 'stream',
       allow: 'multipart/form-data',
+      timeout: false,
+      parse: true,
+      maxBytes: 1073741824,
     },
   },
   handler: async (request, h) => {
