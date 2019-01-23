@@ -80,7 +80,7 @@ export default {
       this.dropFiles.forEach((file) => {
         formData.append(this.typeName, file);
       });
-      const baseUrl = `${process.env.VUE_APP_API_PROTO}://${process.env.VUE_APP_API_DOMAIN}:${process.env.VUE_APP_API_PORT}/upload`;
+      const baseUrl = `${process.env.VUE_APP_API_ENDPOINT}/upload`;
       console.log(baseUrl);
       this.$axios
         .post(baseUrl, formData, {
