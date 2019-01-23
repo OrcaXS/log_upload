@@ -25,7 +25,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.1",
-    "hapi": "17.x.x",
+    "hapi": "^18.0.0",
     "inert": "^5.1.2",
     "nodemon": "^1.18.9"
   },
